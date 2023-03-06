@@ -1,0 +1,77 @@
+@use 'reset';
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("../node_modules/normalize.css/normalize.css");
+
+main {
+  background-color: rgb(93, 104, 220);
+  height: 100vh;
+  position: relative;
+
+  #jokebox {
+    padding: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Nanum Gothic", sans-serif;
+    width: 700px;
+    background-color: #ffeeff;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 4px 7px 27px 6px rgba(0, 0, 0, 0.55);
+    box-shadow: 4px 7px 27px 6px rgba(0, 0, 0, 0.55);
+
+    h3 {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      line-height: 1;
+      font-size: 1.2rem;
+      text-align: center;
+      color: hsl(0, 0%, 56%);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: black;
+      font-weight: 700;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      line-height: 1.5;
+    }
+
+    .generate {
+      color: white;
+      background-color: #9e229e;
+      display: inline-block;
+      width: 220px;
+      display: flex;
+      padding: 10px 7px;
+      margin: auto;
+      justify-content: center;
+      border-radius: 7px;
+      -webkit-box-shadow: 4px 7px 17px -1px rgba(0, 0, 0, 0.58);
+      box-shadow: 4px 7px 17px -1px rgba(0, 0, 0, 0.58);
+
+      button {
+        line-height: 1;
+        background-color: inherit;
+        color: inherit;
+        padding-right: 13px;
+      }
+
+      i {
+        font-size: inherit;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+.rotate {
+  transition: all 350ms ease;
+}
